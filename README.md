@@ -23,18 +23,18 @@ docker run --name project-jordyn \
 
 ### Server Deployment
 
-The `lxrbckl/project-jordyn` image is built and pushed to Docker Hub automatically on every commit to `main` by the [`dockerhub-build-push`](.github/workflows/dockerhub-build-push.yml) GitHub Actions workflow.
+The `lxrbckl/project-jordyn:main` image is built and pushed to Docker Hub automatically on every commit to `main` by the [`dockerhub-build-push`](.github/workflows/dockerhub-build-push.yml) GitHub Actions workflow.
 
 ```bash
 # Pull the latest image
-docker pull lxrbckl/project-jordyn
+docker pull lxrbckl/project-jordyn:main
 
 # Run it detached, with auto-restart, on host port 8047
 docker run -d \
   --name project-jordyn \
   -p 8047:8080 \
   --restart unless-stopped \
-  lxrbckl/project-jordyn
+  lxrbckl/project-jordyn:main
 ```
 
 Once the container is up, the site is reachable at `http://<host>:8047`.
@@ -42,7 +42,7 @@ Once the container is up, the site is reachable at `http://<host>:8047`.
 To update an already-running container:
 
 ```bash
-docker pull lxrbckl/project-jordyn
+docker pull lxrbckl/project-jordyn:main
 docker stop project-jordyn && docker rm project-jordyn
 ```
 
