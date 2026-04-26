@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Earning two Bachelor's degrees in Economics and Mathematics, graduating Summa Cum Laude from William Jewell College.",
   summary:
-    "I'm completing two separate [Bachelor's degrees at William Jewell College](/#education) — a B.A. in Economics (Spring 2026) and a B.A. in Mathematics (Fall 2026) — and am poised to graduate **Summa Cum Laude**. My advanced coursework spans econometrics, abstract algebra, differential equations, and calculus, equipping me with a rigorous analytical foundation across both disciplines. I was recognized as a [John W. Boatwright Scholar](/#awards) for outstanding academic achievement and scholarly excellence in economics, and have maintained Dean's List standing every semester throughout my college career.",
+    "I'm completing two separate [Bachelor's degrees at William Jewell College](/#education) — a B.A. in Economics (Spring 2026) and a B.A. in Mathematics (Fall 2026) — and am poised to graduate **Summa Cum Laude**. My advanced coursework spans econometrics, abstract algebra, differential equations, and calculus, equipping me with a rigorous analytical foundation across both disciplines. I was honored at William Jewell's Celebration of Honors with the [Economics Faculty Award](/#awards) as the outstanding graduating senior in economics, building on prior recognition as a [John W. Boatwright Scholar](/#awards) for academic achievement and scholarly excellence in the field. I have maintained Dean's List standing every semester throughout my college career. Outside the classroom, I was named [Partner of the Quarter](/#awards) at Starbucks for reliability, mentorship, and stepping up during periods of high store need while balancing a full course load.",
   avatarUrl: "https://immich.lxrbckl.com/api/assets/85644a4a-1388-49cc-bbad-575e6a6c63b2/thumbnail?slug=jordynBarger&size=preview&c=YSgSFwLoh2h%2FdYWFh3hnl4d3iXA4CXsA&edited=true",
   skills: [
     "Critical Thinking",
@@ -23,6 +23,7 @@ export const DATA = {
     "Communication"
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
+  resumeUrl: "https://resume.jbarger.app/jordynbarger/resume",
   contact: {
     email: "jordynbarger@proton.me",
     tel: "+18166176855",
