@@ -35,7 +35,7 @@ export const DATA = {
 
         navbar: true,
       },
-      email: {
+      Email: {
         name: "Send Email",
         url: "mailto:jordynbarger@proton.me",
         icon: Icons.email,
