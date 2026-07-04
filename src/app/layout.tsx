@@ -1,7 +1,7 @@
 import Navbar from "@/components/navbar";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import { DATA } from "@/data/data";
+import { SITE_META } from "@/data/site-meta";
 import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
@@ -13,17 +13,18 @@ const fontSans = FontSans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(DATA.url),
+  metadataBase: new URL(SITE_META.url),
   title: {
-    default: DATA.name,
-    template: `%s | ${DATA.name}`,
+    default: SITE_META.title,
+    template: `%s | ${SITE_META.title}`,
   },
-  description: DATA.description,
+  description: SITE_META.description,
   openGraph: {
-    title: `${DATA.name}`,
-    description: DATA.description,
-    url: DATA.url,
-    siteName: `${DATA.name}`,
+    title: SITE_META.title,
+    description: SITE_META.description,
+    url: SITE_META.url,
+    siteName: SITE_META.title,
+    images: [{ url: SITE_META.ogImage, alt: SITE_META.title }],
     locale: "en_US",
     type: "website",
   },
@@ -39,8 +40,10 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: `${DATA.name}`,
-    card: "summary_large_image",
+    title: SITE_META.title,
+    description: SITE_META.description,
+    images: [SITE_META.ogImage],
+    card: "summary",
   },
   verification: {
     google: "",
